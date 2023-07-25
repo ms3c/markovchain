@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Markov Chain</title>
+</head>
+
+<body>
+  <h1>Markov Chain Links</h1>
+  <ul id="numberList">
+    <!-- JavaScript will populate the numbers here as links -->
+  </ul>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const numberList = document.getElementById("numberList");
+
+      // Loop to create number links with different 'var' values
+      for (let varValue = 2; varValue <= 10; varValue++) {
+        const linkUrl = `http://localhost:5000/${varValue}`;
+
+        // Create an anchor element and set its href attribute
+        const linkElement = document.createElement("a");
+        linkElement.href = linkUrl;
+        linkElement.textContent = "Markov Chain " + varValue + "x" + varValue ;
+
+        // Create a list item to hold the link and add it to the list
+        const listItem = document.createElement("li");
+        listItem.appendChild(linkElement);
+        numberList.appendChild(listItem);
+      }
+    });
+  </script>
+</body>
+
+</html>

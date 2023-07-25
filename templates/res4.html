@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MathML Matrix Example</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			font-size: 24px;
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		.mathml-container {
+			border: 1px solid black;
+			padding: 20px;
+			background-color: white;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+		}
+		
+		mtable {
+			border-collapse: collapse;
+			margin: 0 auto;
+		}
+		
+		mtable td {
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="mathml-container">
+		<math>
+			<mtable>
+				<mtr>
+					{% for element in rows0 %}
+					<mtd>{{ "%0.2f"|format(element) }}</mtd>
+					{% endfor %}
+				</mtr>
+				<mtr>
+					{% for element in rows1 %}
+					<mtd>{{ "%0.2f"|format(element) }}</mtd>
+					{% endfor %}
+				</mtr>
+				<mtr>
+					{% for element in rows2 %}
+					<mtd>{{ "%0.2f"|format(element) }}</mtd>
+					{% endfor %}
+				</mtr>
+				<mtr>
+					{% for element in rows3 %}
+					<mtd>{{ "%0.2f"|format(element) }}</mtd>
+					{% endfor %}
+				</mtr>
+			
+			
+				
+				
+			</mtable>
+		</math>
+	</div>
+</body>
+</html>

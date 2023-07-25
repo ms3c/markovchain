@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MathML Matrix Example</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			font-size: 24px;
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		.mathml-container {
+			border: 1px solid black;
+			padding: 20px;
+			background-color: white;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+		}
+		
+		mtable {
+			border-collapse: collapse;
+			margin: 0 auto;
+		}
+		
+		mtable td {
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="mathml-container">
+		<math>
+			<mtable>
+				<mtr>
+					<mtd>{{ val1 }}</mtd>
+					<mtd>{{ val2 }}</mtd>
+					<mtd>{{ val3 }}</mtd>
+				</mtr>
+				<mtr>
+					<mtd>{{ val4 }}</mtd>
+					<mtd>{{ val5 }}</mtd>
+					<mtd>{{ val6 }}</mtd>
+				</mtr>
+				<mtr>
+					<mtd>{{ val7 }}</mtd>
+					<mtd>{{ val8 }}</mtd>
+					<mtd>{{ val9 }}</mtd>
+				</mtr>
+				<mtr>
+					<mtd>{{ val10 }}</mtd>
+					<mtd>{{ val11 }}</mtd>
+					<mtd>{{ val12 }}</mtd>
+				</mtr>
+			</mtable>
+		</math>
+	</div>
+</body>
+</html>
