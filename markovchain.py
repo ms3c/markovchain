@@ -1,6 +1,7 @@
 import numpy as np
 from numpy.linalg import matrix_power
 from flask import Flask, render_template, request
+import webbrowser as wb
 app = Flask(__name__)
 @app.route('/')
 def home():
@@ -460,13 +461,11 @@ def calc10():
     rows9 = result_after_two_steps[9]
 
     
-
-
-    print("HAHAHAHAHA")
     print(result_after_two_steps)
     return render_template('res10.html', rows0=rows0, rows1=rows1, rows2=rows2, rows3=rows3, rows4=rows4, rows5=rows5, rows6=rows6, rows7=rows7, rows8=rows8, rows9=rows9)   
 if __name__ == '__main__':
  
     # run() method of Flask class runs the application
     # on the local development server.
+    wb.open('http://127.0.0.1:5000/')
     app.run()
