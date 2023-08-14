@@ -1,5 +1,5 @@
 import numpy as np
-from numpy.linalg import matrix_power
+from numpy.linalg import matrix_power # for ^ period
 from flask import Flask, render_template, request
 import webbrowser as wb
 app = Flask(__name__)
