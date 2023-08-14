@@ -161,11 +161,6 @@ def calc5():
     print(mat4)
     print(mat5)
 
-
-
-    #for value in range(matrix_size):
-    #    print(mat1[value])
-    # Create a 2D array, matrix equivalent of the imaginary unit
     arr = np.array([mat1, mat2, mat3, mat4, mat5])
     result_after_two_steps = np.linalg.matrix_power(arr, int(period))
     rows0 = result_after_two_steps[0]
@@ -213,10 +208,6 @@ def calc6():
     print(mat6)
 
 
-
-    #for value in range(matrix_size):
-    #    print(mat1[value])
-    # Create a 2D array, matrix equivalent of the imaginary unit
     arr = np.array([mat1, mat2, mat3, mat4, mat5, mat6])
     result_after_two_steps = np.linalg.matrix_power(arr, int(period))
     rows0 = result_after_two_steps[0]
@@ -263,11 +254,6 @@ def calc7():
     print(mat6)
     print(mat7)
 
-
-
-    #for value in range(matrix_size):
-    #    print(mat1[value])
-    # Create a 2D array, matrix equivalent of the imaginary unit
     arr = np.array([mat1, mat2, mat3, mat4, mat5, mat6, mat7])
     result_after_two_steps = np.linalg.matrix_power(arr, int(period))
     rows0 = result_after_two_steps[0]
@@ -318,10 +304,6 @@ def calc8():
     print(mat7)
     print(mat8)
 
-
-    #for value in range(matrix_size):
-    #    print(mat1[value])
-    # Create a 2D array, matrix equivalent of the imaginary unit
     arr = np.array([mat1, mat2, mat3, mat4, mat5, mat6, mat7, mat8])
     result_after_two_steps = np.linalg.matrix_power(arr, int(period))
     print(result_after_two_steps)
@@ -378,9 +360,6 @@ def calc9():
     print(mat9)
 
 
-    #for value in range(matrix_size):
-    #    print(mat1[value])
-    # Create a 2D array, matrix equivalent of the imaginary unit
     arr = np.array([mat1, mat2, mat3, mat4, mat5, mat6, mat7, mat8, mat9])
     result_after_two_steps = np.linalg.matrix_power(arr, int(period))
     print(result_after_two_steps)
@@ -434,9 +413,6 @@ def calc10():
     print(mat9)
     print(mat10)
 
-    #for value in range(matrix_size):
-    #    print(mat1[value])
-    # Create a 2D array, matrix equivalent of the imaginary unit
     arr = np.array([mat1, mat2, mat3, mat4, mat5, mat6, mat7, mat8, mat9, mat10])
     # Display the array
     print("Our Array...\n",arr)
